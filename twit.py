@@ -1,8 +1,8 @@
 import sys, os, random
 from twython import Twython
-from auth_keys import blah
+from auth_keys import twitter_keys
 
-twitter = Twython(blah[0], blah[1], blah[2], blah[3])
+twitter = Twython(twitter_keys[0], twitter_keys[1], twitter_keys[2], twitter_keys[3])
 
 cons_key = '2QYC8BipkGErbXI1wV4jUNMjV'
 cons_sec = 'V7PZksPzZxgUbGH2O3W8BkyjpZ8UcWfkkjZsGWSUDjrTlvCb7f'
