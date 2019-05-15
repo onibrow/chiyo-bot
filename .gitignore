@@ -1,7 +1,5 @@
 #/bin/bash
 
-auth_keys.py
-
 *.__pycache__/
 __pycache__/
 *.ok_messages
