@@ -1,10 +1,12 @@
-import sys, os, random
+import sys, os, random, git
 from twython import Twython
 from auth_keys import twitter_keys
 
 twitter = Twython(twitter_keys[0], twitter_keys[1], twitter_keys[2], twitter_keys[3])
+repo = git.cmd.Git('.')
 
 def main():
+    repo.pull()
     file_name = random.choice(os.listdir("img/"))
     file_path =  "img/" + file_name
     try:
