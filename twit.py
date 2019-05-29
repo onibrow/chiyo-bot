@@ -6,7 +6,7 @@ twitter = Twython(twitter_keys[0], twitter_keys[1], twitter_keys[2], twitter_key
 repo = git.cmd.Git('.')
 
 def post():
-    repo.pull()
+#    repo.pull()
     file_name = random.choice(os.listdir("img/"))
     file_path =  "img/" + file_name
     try:
@@ -23,7 +23,7 @@ def post():
 def main():
     while (True):
         post()
-        time.sleep(600)
+        time.sleep(3000)
 
 if __name__ == '__main__':
     main()
